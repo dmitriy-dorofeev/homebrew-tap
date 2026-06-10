@@ -5,21 +5,21 @@
 class PhotoSorter < Formula
   desc "A TUI application for organizing photos and videos from different devices"
   homepage "https://github.com/dmitriy-dorofeev/photo-sorter"
-  version "0.14.0"
+  version "0.15.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.14.0/photo-sorter_0.14.0_Darwin_x86_64.tar.gz"
-      sha256 "55f68cfc99cabd599b3c56d7802117be5c1a191b1b01ce9731d8124660b3522d"
+      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.15.4/photo-sorter_0.15.4_Darwin_x86_64.tar.gz"
+      sha256 "c4bd143ff50813a5b0f403c0d3c9a446f1985ae35bbd25cb3aadc8b2c25a37ba"
 
       define_method(:install) do
         bin.install "photo-sorter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.14.0/photo-sorter_0.14.0_Darwin_arm64.tar.gz"
-      sha256 "7c106f99808290ad6a333ccf3c44235710c4bd0f0862e8161a9fab137240104c"
+      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.15.4/photo-sorter_0.15.4_Darwin_arm64.tar.gz"
+      sha256 "f78268b8397bbad30cf8630ddf15b83f58fc385b2566ef3a94fc10cc5eb1a3e8"
 
       define_method(:install) do
         bin.install "photo-sorter"
@@ -29,15 +29,15 @@ class PhotoSorter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.14.0/photo-sorter_0.14.0_Linux_x86_64.tar.gz"
-      sha256 "1da4f3d393f889ab6bde5303826ec003a6b886595e19cd000e1e7ebf21b3c785"
+      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.15.4/photo-sorter_0.15.4_Linux_x86_64.tar.gz"
+      sha256 "dfcb20377f535939c4c22d300eeb485ba54d19b381e73be2e45ae04971af670a"
       define_method(:install) do
         bin.install "photo-sorter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.14.0/photo-sorter_0.14.0_Linux_arm64.tar.gz"
-      sha256 "36fc4e5124c29b40ca5b2c1e1ba88fad71a482b8bdf8056d71a1dc652561d19f"
+      url "https://github.com/dmitriy-dorofeev/photo-sorter/releases/download/v0.15.4/photo-sorter_0.15.4_Linux_arm64.tar.gz"
+      sha256 "672acdfbbf7d6b0d3c4820df4a7208349f74a73a041cf5bc989a4e4b4d60a9e6"
       define_method(:install) do
         bin.install "photo-sorter"
       end

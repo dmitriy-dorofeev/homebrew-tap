@@ -5,21 +5,21 @@
 class Tidysnap < Formula
   desc "A macOS utility with a TUI interface for automatic cleanup of screenshots and screen recordings."
   homepage "https://github.com/dmitriy-dorofeev/tidysnap"
-  version "1.3.0"
+  version "1.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.0/tidysnap_1.3.0_Darwin_x86_64.tar.gz"
-      sha256 "283244b83c005676bf9806bfa29e975ba9785b4d44e220cb6e4a51936ece8588"
+      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.1/tidysnap_1.3.1_Darwin_x86_64.tar.gz"
+      sha256 "71b94e75d00ab9adf182029486b481e8c52a5fab0a27f86eb59718ba50b4d2e8"
 
       define_method(:install) do
         bin.install "tidysnap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.0/tidysnap_1.3.0_Darwin_arm64.tar.gz"
-      sha256 "03e462ec6aa753e06ab7c8b25ebc7da420e1b839444f2100707a875e9b87bdcc"
+      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.1/tidysnap_1.3.1_Darwin_arm64.tar.gz"
+      sha256 "2479795825e033be1418d1a877c1d1266aa2ec1952caf1431b2985bab563c437"
 
       define_method(:install) do
         bin.install "tidysnap"
@@ -29,15 +29,15 @@ class Tidysnap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.0/tidysnap_1.3.0_Linux_x86_64.tar.gz"
-      sha256 "790b709c8ec4a4aeb2e921a2c1dcc54a5bfe040bf03228c8351af5f018f93690"
+      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.1/tidysnap_1.3.1_Linux_x86_64.tar.gz"
+      sha256 "58509d4efcea98910509c7a36f6e070457872eefb13094ad85e6b7f8cae34183"
       define_method(:install) do
         bin.install "tidysnap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.0/tidysnap_1.3.0_Linux_arm64.tar.gz"
-      sha256 "6f07cad686258ecf3c4bb7a952b92cdb9cf4bdc598718380994a4d3ece62a4d2"
+      url "https://github.com/dmitriy-dorofeev/tidysnap/releases/download/v1.3.1/tidysnap_1.3.1_Linux_arm64.tar.gz"
+      sha256 "d810e0ee2d5284c218a3fe92176f3a6974c29e24a523a9d7515f51870b410f6b"
       define_method(:install) do
         bin.install "tidysnap"
       end
